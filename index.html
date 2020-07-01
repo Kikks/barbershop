@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    
+    <title>Barber Shop</title>
+</head>
+<body>
+    <main class="main">
+        <div id = "sidebar" class="sidebar sidebar--closed">
+            <ul class="sidebar__list">
+                <li class="sidebar__list-item"><a href="./" class="sidebar__link  sidebar__link--active">Home</a></li>
+                <li class="sidebar__list-item"><a href="#about" class="sidebar__link">About</a></li>
+                <li class="sidebar__list-item"><a href="#services" class="sidebar__link">Services</a></li>
+                <li class="sidebar__list-item"><a href="#team" class="sidebar__link">Team</a></li>
+                <li class="sidebar__list-item"><a href="#contact" class="sidebar__link">Contact</a></li>
+            </ul>
+        </div>
+    
+        <div id = "dropdown" class="dropdown">
+            <div class="dropdown-toggle"></div>
+        </div>
+    
+        <nav class="nav">
+            <a href = "./" class="nav__logo-box">
+                <img src="./assets/img/logo.svg" alt="logo" class="nav__logo">
+            </a>
+    
+            <ul class="nav__list">
+                <li class="nav__list-item"><a href="./" class="nav__link nav__link--active">Home</a></li>
+                <li class="nav__list-item"><a href="#about" class="nav__link">About</a></li>
+                <li class="nav__list-item"><a href="#services" class="nav__link">Services</a></li>
+                <li class="nav__list-item"><a href="#team" class="nav__link">Team</a></li>
+                <li class="nav__list-item"><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+
+        <header class="header">
+            <div id="carouselExampleIndicators" class="carousel slide header__image-container" data-ride="carousel" data-touch="true">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./assets/img/bgImage.png" class="d-block w-100 header__image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/bg2.jpg" class="d-block w-100 header__image" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./assets/img/bg3.jpg" class="d-block w-100 header__image" alt="...">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+
+              <div class="header__container">
+                <h1 class="header__heading">Africa's Top Barbershop</h1>
+                <p class="header__paragraph">We Cut With Style</p>
+                <button class="btn btn--white">book an appointment</button>
+              </div>
+        </header>
+
+        <section id="about" class="section">
+          <div class="section__container">
+            <h1 class="heading--1 mb-5">About Us</h1>
+            <div class="cards mt-5">
+              <div class="cards__text-box text-right">
+                <p class="cards__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nibh gravida ullamcorper mattis sit mauris libero nulla duis. Ridiculus enim auctor auctor aenean ultrices donec ut feugiat in. Sed nulla adipiscing egestas urna, ut. Libero sollicitudin viverra in nunc, dignissim mus venenatis tincidunt. Odio id volutpat tortor placerat lorem vel.</p>
+                <p class="cards__text">Eget nunc ac arcu id. A adipiscing tellus ornare tellus adipiscing luctus. Facilisis ut nibh ornare nunc. Amet at at a egestas lectus. Nec iaculis cursus mi amet. Tincidunt faucibus eu orci risus odio sed non.</p>
+              </div>
+              <figure class="cards__img-box"><img src="./assets/img/about.png" alt="cardImage" class="cards__img"></figure>
+            </div>
+          </div>
+        </section>
+
+        <section id="services" class="section">
+          <div class="section__container">
+            <h1 class="heading--1 mb-5">Our Services</h1>
+              <div class="cards__container mt-5">
+                <div class="cards">
+                  <div class="cards__text-box cards__text-box--1 text-right">
+                    <h2 class="heading--2 mb-5">BEARD SHAVING</h2>
+                    <p class="cards__text">We shave your beard in order to make you look more neat and give you a toning look. We love to make you look good everytime.</p>
+                    <p class="cards__text">Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elt.</p>
+                    <div class="cards__row mt-5">
+                      <button class="btn btn--dark">book now</button>
+                      <span class = "cards__price">$10</span>
+                    </div>
+                  </div>
+                  <figure class="cards__img-box"><img src="./assets/img/service1.png" alt="cardImage" class="cards__img"></figure>
+                </div>
+              
+
+                <div class="cards">
+                  <figure class="cards__img-box"><img src="./assets/img/service2.png" alt="cardImage" class="cards__img"></figure>
+                  <div class="cards__text-box cards__text-box--2 text-left ">
+                    <h2 class="heading--2 mb-5">HAIR STYLING</h2>
+                    <p class="cards__text">We shave your beard in order to make you look more neat and give you a toning look. We love to make you look good everytime.</p>
+                    <p class="cards__text">Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elt.</p>
+                    <div class="cards__row mt-5">
+                      <button class="btn btn--dark">book now</button>
+                      <span class = "cards__price">$10</span>
+                    </div>
+                  </div>
+                </div>
+              
+
+                <div class="cards">
+                  <div class="cards__text-box cards__text-box--1 text-right">
+                    <h2 class="heading--2 mb-5">BEARD SHAVING</h2>
+                    <p class="cards__text">We shave your beard in order to make you look more neat and give you a toning look. We love to make you look good everytime.</p>
+                    <p class="cards__text">Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elit ut Lorem ipsum dolor sit amet, elit ut consectetur adipiscing elit ut aliquam elt.</p>
+                    <div class="cards__row mt-5">
+                      <button class="btn btn--dark">book now</button>
+                      <span class = "cards__price">$10</span>
+                    </div>
+                  </div>
+                  <figure class="cards__img-box"><img src="./assets/img/service1.png" alt="cardImage" class="cards__img"></figure>
+                </div>
+              </div>
+          </div>
+        </section>
+
+        <section id="team" class="section">
+          <div class="section__container">
+            <h1 class="heading--1 mb-5">Our Creative Team</h1>
+            <div class="team__container mt-5">
+              <figure class="team__img-box">
+                <img src="./assets/img/team1.jpg" alt="TeamMember" class="team__img">
+                <div class="team__name-box"><span class="team__name">Sharan Jamain</span></div>
+              </figure>
+              <figure class="team__img-box">
+                <img src="./assets/img/team2.jpg" alt="TeamMember" class="team__img">
+                <div class="team__name-box"><span class="team__name">John Collins</span></div>
+              </figure>
+              <figure class="team__img-box">
+                <img src="./assets/img/team3.jpg" alt="TeamMember" class="team__img">
+                <div class="team__name-box"><span class="team__name">Brand Phillips</span></div>
+              </figure>
+              <figure class="team__img-box">
+                <img src="./assets/img/team4.jpg" alt="TeamMember" class="team__img">
+                <div class="team__name-box"><span class="team__name">Fahad Khalid</span></div>
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="section">
+          <img class = "formbg" src="./assets/img/form.png" alt="form background">
+          <div class="section__container">
+            <h1 class="form__heading mb-5">Book an appointment</h1>
+
+            <form action="#" class="form mb-5">
+              <div class="form__inputs">
+                <div class="form__input-group">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form__input">
+                </div>
+
+                <div class="form__input-group">
+                  <label for="phone">Phone</label>
+                  <input type="text" name="phone" class="form__input">
+                </div>
+                
+                <div class="form__input-group">
+                  <label for="location">Location</label>
+                  <input type="text" name="location" class="form__input">
+                </div>
+                
+                <div class="form__input-group">
+                  <label for="date">Date</label>
+                  <input type="datetime" name="date" class="form__input">
+                </div>
+              </div>
+              <button class="form__button btn btn--white mt-5">BOOK NOW</button>
+            </form>
+          </div>
+        </section>
+
+        <section id="contact" class="section--contact">
+          <div class="section__container">
+            <h1 class="heading--1 mb-5">Contact Us</h1>
+            <div class="contact">
+              <div class="contact__block">
+                <figure class="contact__figure"><img src="./assets/img/contactbook.svg" alt="contactbook" class="contact__img"></figure>
+                <p class="contact__details">2972 Westheimer Rd. Santa Ana, Illinois 85486 <span>4517 Washington Ave. Manchester, Kentucky 39495</span></p>
+              </div>
+
+              <div class="contact__block">
+                <figure class="contact__figure"><img src="./assets/img/email.svg" alt="email" class="contact__img"></figure>
+                <p class="contact__details">decarber@gmail.com <span>decarber2020@gmail.com</span></p>
+              </div>
+
+              <div class="contact__block">
+                <figure class="contact__figure"><img src="./assets/img/phone.svg" alt="phone" class="contact__img"></figure>
+                <p class="contact__details">(704) 555-0127 <span>(208) 555-0112</span></p>
+              </div>
+
+              <div class="contact__block">
+                <figure class="contact__figure"><img src="./assets/img/clock.svg" alt="clock" class="contact__img"></figure>
+                <p class="contact__details">Mon - Fri : 6am - 10pm <span>Sat - Sun: 8am - 8pm</span></p>
+              </div>
+            </div>
+          </div>
+          <img class = "contact__map" src="./assets/img/map.png" alt="map">
+        </section>
+
+        <footer class="footer">
+          <div class="section__container">
+            <div class="footer__input">
+              <form class="footer__input-box">
+                <input class="footer__input-text" type="text" placeholder="Email Address">
+                <button class="btn btn--pink">Subscribe</button>
+              </form>
+
+              <a href = "./" class="nav__logo-box">
+                  <img src="./assets/img/logo.svg" alt="logo" class="nav__logo">
+              </a>
+            </div>
+
+            <div class="footer__social">
+              <div class="social__box">
+                <h4 class="social__heading">SOCIAL MEDIA LINKS</h4>
+
+                <div class="social">
+                  <a href="http://instagram.com"><img src="./assets/img/ig.svg" alt="instagram" class="social__img"></a>
+                  <a href="http://twittter.com"><img src="./assets/img/twitter.svg" alt="twitter" class="social__img"></a>
+                  <a href="http://facebook.com"><img src="./assets/img/fb.svg" alt="facebook" class="social__img"></a>
+                </div>
+              </div>
+
+              <div class="time">
+                <h3 class="social__heading">Opening Hours</h3>
+                <p class="social__details">Mon - Fri : 6am - 10pm <span>Sat - Sun: 8am - 8pm</span></p>
+              </div>
+            </div>
+
+            <div class="copyright">COPYRIGHT © <span class="pink">DECABS BARBER</span> |  2020  | ALL RIGHTS RESERVED.</div>
+          </div>
+        </footer>
+    </main>
+</body>
+
+<script>
+    $('.carousel').carousel()
+</script>
+<script src="./assets/js/sidebar.js"></script>
+</html>
